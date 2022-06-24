@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone of Amazon.com</title>
+
+    <link rel="stylesheet" href="./src/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body id="app">
+
+    <div class="header_networks">
+        I make this clone to practice a little bit. <span style="color:#ffd814">My networks</span>
+
+        <span class="header_app_icon_social" style="margin-left:1%; margin-right: 1%;">
+            <a href="https://www.linkedin.com/in/gastonebailador/" target="__blank">
+                <i style="font-size:1.3em" class="fa-brands fa-linkedin"></i>
+            </a>
+        </span>
+        <span class="header_app_icon_social">
+            <a href="https://github.com/bailadev93" target="__blank">
+                <i style="font-size:1.3em" class="fa-brands fa-github"></i>
+            </a>
+        </span>
+    </div>
+    <!-- HEADER -->
+    <div class="container_header">
+        <div class="content_header">
+
+            <!-- img-->
+            <div class="content_img">
+                <img src="./src/images/amazon.png" alt="Amazon - Brand" />
+            </div>
+
+            <!-- Deliver to... -->
+            <div class="content_deliverTo">
+                <div>
+                    <small>Deliver to</small>
+                    <br />
+                    <i style="font-size: 1.1em;" class="fa-solid fa-location-pin"></i><span>
+                        <b>Argentina</b>
+                </div>
+            </div>
+
+            <!-- Input Search -->
+            <div class="content_input_search">
+                <div>
+                    <select style="padding:9px" class="input_style style_select">
+                        <option>All</option>
+                    </select>
+                    <input style="padding:10px" class="input_style input_search" type="text"
+                        placeholder="Searcher Amazonic" />
+                    <button style="padding:10px" class="input_style style_btn_searcher" type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Flag Country -->
+            <div class="content_flag_country">
+                <div class="img_flag_country">
+                    <img width="30" src="./src/images/usa_flag.png" />
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+
+            <!-- Sign In-->
+            <div class="content_signIn">
+                <div>
+                    Hello, Sign in <br />
+                    <b>Account & Lists</b>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+
+            <!-- Orders -->
+            <div class="content_orders">
+                <div>
+                    Returns <br /> & Orders
+                </div>
+            </div>
+
+            <!-- Cart -->
+            <div class="content_cart">
+                <div>
+                    <span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    <span style="font-size: 1.1em; font-weight:bold;">
+                        Cart
+                    </span>
+                </div>
+            </div>
+
+            <!-- More options -->
+            <div class="content_more_options">
+                <ul>
+                    <li id="all-menu"><i class="fa-solid fa-bars" style="margin-right: 0.5%;font-size: 1.1em;"></i> All
+                    </li>
+                    <li>Today´s Deals</li>
+                    <li>Customer Service</li>
+                     <li>Gift Cards</li>
+                    <li>Sell</li>
+                </ul>
+
+                <!-- Menu expanded -->
+                <div id="menu_all" class=" modal_menu_all_container">
+                    <div class="modal_menu_all_close">
+                        <i id="menu_all_close" class="fa-solid fa-circle-xmark"></i>
+                    </div>
+
+                    <div class="modal_menu_all_header">
+                        <div>
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span>Hello, Sign in</span>
+                        </div>
+                    </div>
+
+                    <!-- Modal content -->
+                    <div class="modal_menu_all_content">
+                        <div class="modal_menu_all_categories">
+                            <div>
+                                <h3>Digital Content & Devices</h3>
+                                <li>Amazon Music <i class="ico-left fa-solid fa-caret-right"></i></li>
+                                <li>Kindle E-readers & Books <i class="ico-left fa-solid fa-caret-right"></i></li>
+                                <li>Appstore for Android <i class="ico-left fa-solid fa-caret-right"></i></li>
+                            </div>
+                            <hr />
+                            <div>
+                                <h3>Shop By Department</h3>
+                                <li>Electronics <i class="ico-left fa-solid fa-caret-right"></i></li>
+                                <li>Computers <i class="ico-left fa-solid fa-caret-right"></i></li>
+                                <li>Smart Home <i class="ico-left fa-solid fa-caret-right"></i></li>
+                                <li>Arts & Crafts <i class="ico-left fa-solid fa-caret-right"></i></li>
+                                <li>See all <i style="margin-left: 3%;" class="fa-solid fa-caret-down"></i></li>
+                            </div>
+                            <hr />
+                            <div>
+                                <h3>Programs & Features </h3>
+                                <li>Gift Cards <i class="ico-left fa-solid fa-caret-right"></i></li>
+                                <li>#FoundItOnAmazon</li>
+                                <li>Amazon Live <i class="ico-left fa-solid fa-caret-right"></i></li>
+                                <li>International Shopping <i class="ico-left fa-solid fa-caret-right"></i></li>
+                                <li>See all <i style="margin-left: 3%;" class="fa-solid fa-caret-down"></i></li>
+                            </div>
+                            <hr />
+                            <div>
+                                <h3>Helps & Settings</h3>
+                                <li>Your Account</li>
+                                <li><i style="margin-right: 3%;" class="fa-solid fa-earth-americas"></i> English</li>
+                                <li><i style="margin-right: 3%;" class="fa-solid fa-flag-usa"></i> United States</li>
+                                <li>Customer Service</li>
+                                <li>Sign In</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SLIDESHOW -->
+    <div>
+        <div class="content_slideshow_img">
+
+            <!-- Imgs presentations -->
+            <div class="item_slideshow">
+                <img src="./src/images/banner1.jpg" style="width: 100%;" />
+            </div>
+
+            <div class="item_slideshow">
+                <img src="./src/images/banner2.jpg" style="width: 100%;" />
+            </div>
+
+            <div class="item_slideshow">
+                <img src="./src/images/banner3.jpg" style="width: 100%;" />
+            </div>
+
+            <div class="item_slideshow">
+                <img src="./src/images/banner4.jpg" style="width: 100%;" />
+            </div>
+
+            <div class="item_slideshow">
+                <img src="./src/images/banner5.jpg" style="width: 100%;" />
+            </div>
+
+            <a class="btn_prev" onclick="plusSlides(-1)">
+                <i class="fa-solid fa-angle-left"></i>
+            </a>
+            <a class="btn_next" onclick="plusSlides(1)">
+                <i class="fa-solid fa-angle-right"></i>
+            </a>
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+    <div class="container_products">
+
+        <div class="all_products">
+
+            <div class="content_products">
+
+                <!-- X4 -->
+                <div class="c_product">
+                    <div class="c_product_header">
+                        <span>Gaming accesories</span>
+                    </div>
+                    <div class="c_product_body">
+                        <div>
+                            <img src="./src/images/card1_1.jpg" />
+                            <p>
+                                Headsets
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_2.jpg" />
+                            <p>
+                                Keyboards
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_3.jpg" />
+                            <p>
+                                Computer mice
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_4.jpg" />
+                            <p>
+                                Chairs
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c_product_footer">
+                        <p>
+                            See more
+                        </p>
+                    </div>
+                </div>
+
+                <div class="c_product">
+                    <div class="c_product_header">
+                        <span>Shop by Category</span>
+                    </div>
+                    <div class="c_product_body">
+                        <div>
+                            <img src="./src/images/card1_1.jpg" />
+                            <p>
+                                Headsets
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_2.jpg" />
+                            <p>
+                                Keyboards
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_3.jpg" />
+                            <p>
+                                Computer mice
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_4.jpg" />
+                            <p>
+                                Chairs
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c_product_footer">
+                        <p>
+                            See more
+                        </p>
+                    </div>
+                </div>
+
+                <div class="c_product">
+                    <div class="c_product_header">
+                        <span>Dresses</span>
+                    </div>
+                    <div class="c_product_body">
+                        <div>
+                            <img src="./src/images/card1_1.jpg" />
+                            <p>
+                                Headsets
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_2.jpg" />
+                            <p>
+                                Keyboards
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_3.jpg" />
+                            <p>
+                                Computer mice
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_4.jpg" />
+                            <p>
+                                Chairs
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c_product_footer">
+                        <p>
+                            See more
+                        </p>
+                    </div>
+                </div>
+
+                <div class="c_product1">
+                    <div class="box_signIn">
+                        <div>
+                            <span>
+                                Sign in for the best experience
+                            </span>
+                        </div>
+                        <div>
+                            <button type="button">
+                                Sign in securely
+                            </button>
+                        </div>
+                    </div>
+                    <div class="box_img_over">
+                        <img src="./src/images/over.jpg" />
+                    </div>
+                </div>
+
+                <!-- X 4-->
+                <div class="c_product">
+                    <div class="c_product_header">
+                        <span>Gaming accesories</span>
+                    </div>
+                    <div class="c_product_body">
+                        <div>
+                            <img src="./src/images/card1_1.jpg" />
+                            <p>
+                                Headsets
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_2.jpg" />
+                            <p>
+                                Keyboards
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_3.jpg" />
+                            <p>
+                                Computer mice
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_4.jpg" />
+                            <p>
+                                Chairs
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c_product_footer">
+                        <p>
+                            See more
+                        </p>
+                    </div>
+                </div>
+                <div class="c_product">
+                    <div class="c_product_header">
+                        <span>Gaming accesories</span>
+                    </div>
+                    <div class="c_product_body">
+                        <div>
+                            <img src="./src/images/card1_1.jpg" />
+                            <p>
+                                Headsets
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_2.jpg" />
+                            <p>
+                                Keyboards
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_3.jpg" />
+                            <p>
+                                Computer mice
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_4.jpg" />
+                            <p>
+                                Chairs
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c_product_footer">
+                        <p>
+                            See more
+                        </p>
+                    </div>
+                </div>
+                <div class="c_product">
+                    <div class="c_product_header">
+                        <span>Gaming accesories</span>
+                    </div>
+                    <div class="c_product_body">
+                        <div>
+                            <img src="./src/images/card1_1.jpg" />
+                            <p>
+                                Headsets
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_2.jpg" />
+                            <p>
+                                Keyboards
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_3.jpg" />
+                            <p>
+                                Computer mice
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_4.jpg" />
+                            <p>
+                                Chairs
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c_product_footer">
+                        <p>
+                            See more
+                        </p>
+                    </div>
+                </div>
+                <div class="c_product">
+                    <div class="c_product_header">
+                        <span>Gaming accesories</span>
+                    </div>
+                    <div class="c_product_body">
+                        <div>
+                            <img src="./src/images/card1_1.jpg" />
+                            <p>
+                                Headsets
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_2.jpg" />
+                            <p>
+                                Keyboards
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_3.jpg" />
+                            <p>
+                                Computer mice
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./src/images/card1_4.jpg" />
+                            <p>
+                                Chairs
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c_product_footer">
+                        <p>
+                            See more
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="container_footer">
+            <div class="container_footer_signIn">
+                <hr />
+                <div class="content_footer_signIn">
+                    <div>
+                        <span>See personalized recommendations</span>
+                    </div>
+                    <div>
+                        <button type="button" class="btn_signIn_footer">
+                            Sign in
+                        </button>
+                        <div>
+                            <small>New customer? <span class="link_start_here">Start here.</span></small>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+
+
+            <div id="scroll_up" class="backToUp">
+                <span>Back to up</span>
+            </div>
+
+            <div class="footer_copy">
+                &copy;Gastón E. Bailador, Making Clone of Amazon.com
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="./src/js/jquery.js"></script>
+    <script src="./src/js/app.js"></script>
+ </body>
+
+</html>
